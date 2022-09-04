@@ -1,0 +1,203 @@
+case_id,title,suite,suite_id,assignee,time_spent_ms,status,finish_time,steps,steps_input_data,steps_expected_result,steps_status,comment,priority,severity,automation,type,tags,step_comments,case_parameter
+1,"Login Berhasil",Login,1,"Isaghrib Aziz Pramono",35000,Passed,"2022-09-04 13:57:26","1. Buka halaman login
+2. Masukkan *username*
+3. Masukkan password
+4. Tekan Login
+","1. https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2. Admin
+3. admin123
+4. 
+","1. Halaman login terbuka
+2. Kolom *username* terisi
+3. Kolom *password* terisi
+4. Halaman *dashboard* terbuka
+","1. Passed
+2. Passed
+3. Passed
+4. Passed
+",,High,Critical,"Not automated",Other,,"1. 
+2. 
+3. 
+4. ",
+2,"Username Salah",Login,1,"Isaghrib Aziz Pramono",2000,Passed,"2022-09-04 13:57:28","1. Buka halaman login
+2. Masukkan *username*
+3. Masukkan password
+4. Tekan Login
+","1. https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2. songoku
+3. admin123
+4. 
+","1. Halaman login terbuka
+2. Kolom *username* terisi
+3. Kolom *password* terisi
+4. Muncul peringatan kesalahan
+",,,High,Critical,"Not automated",Other,,,
+3,"Password Salah",Login,1,"Isaghrib Aziz Pramono",1000,Passed,"2022-09-04 13:57:30","1. Buka halaman login
+2. Masukkan *username*
+3. Masukkan password
+4. Tekan Login
+","1. https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2. Admin
+3. admingoku
+4. 
+","1. Halaman login terbuka
+2. Kolom *username* terisi
+3. Kolom *password* terisi
+4. Muncul peringatan kesalahan
+",,,High,Critical,"Not automated",Other,,,
+4,"Username dan Password Kosong",Login,1,"Isaghrib Aziz Pramono",2000,Passed,"2022-09-04 13:57:33","1. Buka halaman login
+2. Tekan Login
+","1. https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2. 
+","1. Halaman login terbuka
+2. Muncul peringatan required disetiap kolom
+",,,High,Critical,"Not automated",Other,,,
+5,"Masuk Halaman Admin",Admin,2,"Isaghrib Aziz Pramono",5000,Passed,"2022-09-04 13:57:40","1. Tekan menu Admin pada sidebar
+","1. 
+","1. Masuk halaman Admin/User Management
+","1. Passed
+",,Medium,Major,"Not automated",Other,,"1. ",
+6,"Mencari dengan Username","User Management",12,"Isaghrib Aziz Pramono",34000,Passed,"2022-09-04 13:58:15","1. Masukkan *username*
+2. Tekan Search
+","1. John.Smith
+2. 
+","1. Kolom *usernamei* terisi
+2. Muncul data berdasarkan username yang diisi
+",,,Medium,Major,"Not automated",Other,,,
+7,"Reset Pencarian","User Management",12,"Isaghrib Aziz Pramono",1000,Passed,"2022-09-04 13:58:17","1. Tekan Reset
+","1. 
+","1. * Kolom username menjadi kosong
+* data tabel kembali seperti awal
+",,,Medium,Normal,"Not automated",Functional,,,
+8,"Tambah user Admin","User Management",12,"Isaghrib Aziz Pramono",0,Passed,"2022-09-04 13:58:19","1. Tekan Add
+2. Pilih User Role
+3. Isi kolom Employee Name
+4. Pilih Status
+5. Isi kolom Username
+6. Isi kolom Password dan Confirm Password
+7. Tekan Save
+","1. 
+2. Admin
+3. John Smith
+4. Enabled
+5. JohnS
+6. Qwertyuiop\_1
+7. 
+","1. Terbuka halaman Add user
+2. User role admin terpilih
+3. Kolom terisi
+4. Status Enabled terpilih
+5. Username terisi
+6. Password dan Confirm Password terisi
+7. * Muncul notifikasi Succes
+* Menuju halaman Admin/User Management
+",,,Medium,Normal,"Not automated",Other,,,
+9,"Masuk Halaman PIM",PIM,3,"Isaghrib Aziz Pramono",1000,Passed,"2022-09-04 13:58:21","1. Sudah melakukan Login
+","1. 
+","1. Masuk halaman PIM
+",,,"Not set",Major,"Not automated",Other,,,
+10,"Mencari pada Employee List",PIM,3,"Isaghrib Aziz Pramono",1000,Passed,"2022-09-04 13:58:22","1. Masukkan Employee Name
+2. Tekan Search
+","1. John Smith
+2. 
+","1. Kolom Employee Name terisi
+2. Data yang dicari ditampilkan
+",,,"Not set",Normal,"Not automated",Functional,,,
+11,"Hapus Data Employee List",PIM,3,"Isaghrib Aziz Pramono",1000,Passed,"2022-09-04 13:58:24","1. Tekan tombol dengan icon tong sampah
+2. Tekan Yes,Delete
+","1. 
+2. 
+","1. muncul popup konfirmasi
+2. * muncul notifikasi sukses
+* data terhapus
+",,,"Not set",Normal,"Not automated",Other,,,
+12,"Menambah Employee",PIM,3,"Isaghrib Aziz Pramono",1000,Passed,"2022-09-04 13:58:26","1. Tekan Add Employee / + Add
+2. Masukkan Employee Full Name
+3. Tambahkan gambar Profil
+4. Tekan Save
+","1. 
+2. First Name : Son / Last Name : Goku
+3. 
+4. 
+","1. Halaman Add Employee terbuka
+2. Kolom First Name dan Last Name terisi
+3. Gambar berhasil ditambah
+4. muncul notifikasi sukses
+",,,"Not set",Normal,"Not automated",Other,,,
+13,"Masuk Halaman Leave",Leave,4,"Isaghrib Aziz Pramono",1000,Passed,"2022-09-04 13:58:28","1. Tekan Leave pada side bar menu
+","1. 
+","1. halaman Leave terbuka
+",,,"Not set",Normal,"Not automated",Other,,,
+14,"Approve pada Leave List",Leave,4,"Isaghrib Aziz Pramono",1000,Passed,"2022-09-04 13:58:30","1. Tekan Approve
+","1. 
+","1. Muncul notifikasi success
+",,,"Not set",Normal,"Not automated",Other,,,
+15,"Reject pada Leave List",Leave,4,"Isaghrib Aziz Pramono",1000,Passed,"2022-09-04 13:58:32","1. Tekan Reject
+","1. 
+","1. Muncul notifikasi success
+",,,"Not set",Normal,"Not automated",Other,,,
+16,"Masuk Halaman Time",Time,13,"Isaghrib Aziz Pramono",1000,Passed,"2022-09-04 13:58:34","1. Tekan Time pada side bar menu
+","1. 
+","1. Halaman Time terbuka
+",,,"Not set",Normal,"Not automated",Other,,,
+17,"Melihat Timesheets Employee dari Search",Time,13,"Isaghrib Aziz Pramono",1000,Passed,"2022-09-04 13:58:36","1. Masukkaan Employee Name
+2. Tekan View
+","1. John Smith
+2. 
+","1. Kolom Employee Name terisi
+2. Halaman Timesheet for John Smith terbuka
+",,,"Not set",Normal,"Not automated",Functional,,,
+18,"Membuat Timesheets Employee",Time,13,"Isaghrib Aziz Pramono",1000,Passed,"2022-09-04 13:58:37","1. Tekan Create Timesheet
+2. Tekan Edit
+3. Masukkan Project
+4. Pilih Activity
+5. Tekan Save
+6. Tekan Submit
+","1. 
+2. 
+3. ACME ltd
+4. Administration
+5. 
+6. 
+","1. * muncul notifikasi success
+* record ditampilkan kosong
+2. Terbuka halaman Edit Timesheet for John Smith
+3. Kolom Project terisi ACME Ltd - ACME Ltd
+4. Administration berhasil dipilih
+5. * Muncul notifikasi success saved
+* kembali ke halaman record timesheets
+6. Muncul notifikasi success
+",,,"Not set",Normal,"Not automated",Other,,,
+19,"Masuk Halaman Recruitment",Recruitment,5,"Isaghrib Aziz Pramono",0,Passed,"2022-09-04 13:58:39","1. Tekan Recruitment pada side bar menu
+","1. 
+","1. Halaman Recruitment terbuka
+",,,"Not set",Normal,"Not automated",Other,,,
+20,"Melihat Detail Candidate",Recruitment,5,"Isaghrib Aziz Pramono",1000,Passed,"2022-09-04 13:58:41","1. Tekan ikon mata pada Record candidate
+","1. 
+","1. Terbuka halaman Candidate Profile
+",,,"Not set",Normal,"Not automated",Other,,,
+21,"Unduh resume Candidate",Recruitment,5,"Isaghrib Aziz Pramono",1000,Passed,"2022-09-04 13:58:42","1. Tekan ikon unduh pada Record candidate
+","1. 
+","1. * terbuka tab baru
+* resume diunduh
+",,,"Not set",Normal,"Not automated",Other,,,
+22,"Membuka Halaman My Info","My Info",6,"Isaghrib Aziz Pramono",0,Passed,"2022-09-04 13:58:44","1. Tekan My Info pada side bar menu
+","1. 
+","1. halaman My Info terbuka
+",,,"Not set",Normal,"Not automated",Other,,,
+23,"Membuka Halaman Performance",Performance,7,"Isaghrib Aziz Pramono",0,Passed,"2022-09-04 13:58:46","1. Tekan My info pada side bar menu
+","1. 
+","1. halaman My Info terbuka
+",,,"Not set",Normal,"Not automated",Other,,,
+24,"Membuka Halaman Dashboard",Dashboard,8,"Isaghrib Aziz Pramono",0,Passed,"2022-09-04 13:58:47","1. Tekan Dashboard pada side bar menu
+","1. 
+","1. halaman Dashboard terbuka
+",,,"Not set",Normal,"Not automated",Other,,,
+25,"Membuka Halaman Directory",Directory,9,"Isaghrib Aziz Pramono",1000,Passed,"2022-09-04 13:58:50","1. Tekan Directory pada side bar menu
+","1. 
+","1. halaman Directory terbuka
+",,,"Not set",Normal,"Not automated",Other,,,
+26,"Membuka Halaman Buzz",Buzz,10,"Isaghrib Aziz Pramono",1000,Passed,"2022-09-04 13:58:51","1. Tekan Buzz pada side bar menu
+","1. 
+","1. halaman Buzz terbuka
+",,,"Not set",Normal,"Not automated",Other,,,
